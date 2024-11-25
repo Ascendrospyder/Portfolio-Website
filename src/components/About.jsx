@@ -32,7 +32,7 @@ const About = () => {
               href="#contact"
               className="inline-flex text-white gradient-background border-0 py-2 px-6 focus:outline-none rounded text-lg"
             >
-              Connect with me!
+              <span className="animate-pulse">Connect with me!</span>
             </a>
             <a
               href="#projects"
