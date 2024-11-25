@@ -1,9 +1,11 @@
 import React from "react";
+import profilePic from "../resources/pfp.jpg";
 
 const About = () => {
   return (
     <section id="about">
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
+        {/* Left Section with Text */}
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
             Hello, I am Arindam 👋
@@ -11,7 +13,8 @@ const About = () => {
             <a
               href="https://www.homeaffairs.gov.au"
               target="_blank"
-              class="hover-link"
+              rel="noreferrer"
+              className="hover-link"
             >
               Home Affairs
             </a>{" "}
@@ -38,6 +41,14 @@ const About = () => {
               My Projects
             </a>
           </div>
+        </div>
+        {/* Right Section with Image */}
+        <div className="md:w-1/2 flex justify-center items-center">
+          <img
+            src={profilePic} // Replace with the actual path to your image file
+            alt="profile"
+            className="rounded-full w-65 h-65 object-cover shadow-lg"
+          />
         </div>
       </div>
     </section>
