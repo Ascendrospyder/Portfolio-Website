@@ -28,12 +28,12 @@ const Projects = () => {
             Here are a few projects that showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in the form of images. Feel free to explore and see the quality and diversity of my projects.
           </p>
         </div>
-        <div className="flex flex-wrap -m-4">
+        <div className="flex flex-wrap -m-4 ">
           {projects.map((project) => (
             <a
               href={project.link}
               key={project.image}
-              className="sm:w-1/2 w-full p-4"
+              className="sm:w-1/2 w-full p-4 z-10"
             >
               <div className="flex relative">
                 <img
@@ -41,7 +41,7 @@ const Projects = () => {
                   className="absolute inset-0 w-full h-full object-cover object-center"
                   src={project.image}
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                <div className="px-8 py-10 relative  w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                     {project.subtitle}
                   </h2>
@@ -54,14 +54,17 @@ const Projects = () => {
                     {project.stack.map((tech) => (
                       <div
                         key={tech.name}
-                        className="w-12 h-12 p-2 border-2 border-[#af44ef] rounded-full flex items-center justify-center"
+                        className="relative group w-12 h-12 p-2 border-2 border-green-500 rounded-full flex items-center justify-center"
                       >
                         <img
                           src={tech.icon}
                           alt={tech.name}
-                          title={tech.name}
                           className="w-full h-full object-contain"
                         />
+                        {/* Tooltip */}
+                        <span className="absolute bottom-14 left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-xs rounded-lg px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                          {tech.name}
+                        </span>
                       </div>
                     ))}
                   </div>
