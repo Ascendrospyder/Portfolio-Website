@@ -35,7 +35,7 @@ const Projects = () => {
               key={project.image}
               className="sm:w-1/2 w-full p-4 z-10"
             >
-              <div className="flex relative">
+              <div className="flex relative w-full h-[300px]">
                 <img
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
