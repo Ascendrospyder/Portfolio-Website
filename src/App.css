@@ -37,6 +37,11 @@
   transition: background-position 0.5s ease;
 }
 
+.nav-bar {
+  background: rgba(20, 23, 40, 0.8);
+  backdrop-filter: blur(10px);
+}
+
 .hover-link {
   color: #e02ef0;
   cursor: pointer;
