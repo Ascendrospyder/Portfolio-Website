@@ -77,3 +77,39 @@ export const skills = [
   "IBM DB2",
   "Oracle",
 ];
+
+export const courseWork = [
+  "COMP3121: Algorithms and Programming Techniques",
+  "COMP1531: Software Engineering Fundamentals",
+  "COMP9321: Data Services Engineering",
+  "COMP2511: Object-Oriented Design & Programming",
+  "COMP6080: Web Front-End Programming",
+  "COMP4511: User Interface Design and Construction",
+  "COMP1521: Computer Systems Fundamentals",
+  "COMP2521: Data Structures and Algorithms",
+  "COMP1511: Programming Fundamentals",
+];
+
+export const experiences = [
+  {
+    role: "Digital Cadet - Fullstack Developer",
+    company: "Department of Home Affairs",
+    duration: "Jan 2023 - Present",
+    description:
+      "Worked on critical cargo applications ensuring responsive design, multi-browser support, and system efficiency. Helped configure pipelines in Azure DevOps.",
+  },
+  {
+    role: "Database Administrator Intern",
+    company: "Home Affairs",
+    duration: "Jul 2022 - Dec 2022",
+    description:
+      "Optimized database queries and managed database migrations for large-scale systems supporting national operations.",
+  },
+  {
+    role: "Software Engineering Intern",
+    company: "Treasury Department",
+    duration: "Nov 2021 - Feb 2022",
+    description:
+      "Contributed to building internal tools for data analysis and reporting, improving team efficiency by 20%.",
+  },
+];
