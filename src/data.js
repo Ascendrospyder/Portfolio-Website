@@ -50,3 +50,30 @@ export const projects = [
     ]
   }
 ];
+
+export const skills = [
+  "TypeScript",
+  "Python",
+  "Java",
+  "C",
+  "Express.js",
+  "React.js",
+  "Angular",
+  "SpringBoot",
+  "Flask",
+  "React Native",
+  "Scikit-learn",
+  "Git",
+  "Linux",
+  "Maven",
+  "CI/CD",
+  "Jira/Confluence",
+  "Figma",
+  "Docker",
+  "Service Now",
+  "SonarQube",
+  "PostgreSQL",
+  "MongoDB",
+  "IBM DB2",
+  "Oracle",
+];
